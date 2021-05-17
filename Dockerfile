@@ -9,7 +9,7 @@ RUN apt-get upgrade -y
 
 COPY debconf.selections /tmp/
 RUN debconf-set-selections /tmp/debconf.selections
-
+ 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y zip unzip
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	php7.4 \
