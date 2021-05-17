@@ -1,3 +1,5 @@
+I haven't updated this readme but this is the same as below except Ubuntu 20.04 and PHP 7.4. Same same, but different. Oh mcrypt, gone. recode. gone. 
+
 fauria/lamp
 ==========
 
@@ -13,7 +15,7 @@ If you dont need support for MySQL/MariaDB, or your app runs on PHP 5.4, maybe [
 
 Includes the following components:
 
- * Ubuntu 16.04 LTS Xenial Xerus base image.
+ * Ubuntu 20.04 LTS Xenial Xerus base image.
  * Apache HTTP Server 2.4
  * MariaDB 10.0
  * Postfix 2.11

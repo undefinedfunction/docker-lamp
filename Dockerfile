@@ -10,8 +10,8 @@ RUN apt-get upgrade -y
 COPY debconf.selections /tmp/
 RUN debconf-set-selections /tmp/debconf.selections
 
-RUN apt-get install -y zip unzip
-RUN apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y zip unzip
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	php7.4 \
 	php7.4-bz2 \
 	php7.4-cgi \
@@ -43,10 +43,10 @@ RUN apt-get install -y \
 	php7.4-xmlrpc \
 	php7.4-xsl \
 	php7.4-zip
-RUN apt-get install apache2 libapache2-mod-php7.4 -y
-RUN apt-get install mariadb-common mariadb-server mariadb-client -y
-RUN apt-get install postfix -y
-RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install apache2 libapache2-mod-php7.4 -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install mariadb-common mariadb-server mariadb-client -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install postfix -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install git nodejs npm composer nano tree vim curl ftp -y
 RUN npm install -g bower grunt-cli gulp
 
 ENV LOG_STDOUT **Boolean**
