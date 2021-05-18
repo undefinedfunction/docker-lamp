@@ -1,5 +1,3 @@
-I haven't updated this readme but this is the same as below except Ubuntu 20.04 and PHP 7.4. Same same, but different. Oh mcrypt, gone. recode. gone. 
-
 fauria/lamp
 ==========
 
@@ -37,7 +35,6 @@ Includes the following components:
 	* php-intl
 	* php-json
 	* php-ldap
-	* php-mcrypt
 	* php-mysql
 	* php-odbc
 	* php-opcache
@@ -45,7 +42,6 @@ Includes the following components:
 	* php-phpdbg
 	* php-pspell
 	* php-readline
-	* php-recode
 	* php-snmp
 	* php-sqlite3
 	* php-sybase
